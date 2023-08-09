@@ -1,4 +1,4 @@
-namespace Models.PayModel;
+namespace Models.Pay;
 public class Pay
 {
     public int Id { get; set; }

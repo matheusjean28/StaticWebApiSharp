@@ -1,6 +1,6 @@
 
 using Microsoft.EntityFrameworkCore;
-using Models.PayModel;
+using Models.Pay;
 
 namespace ContextPay.PayDb;
 class PayDb : DbContext
