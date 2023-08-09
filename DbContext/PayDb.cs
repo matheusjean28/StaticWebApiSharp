@@ -1,7 +1,8 @@
+
 using Microsoft.EntityFrameworkCore;
 using Models.PayModel;
 
-namespace PayContext.ContextPay;
+namespace ContextPay.PayDb;
 class PayDb : DbContext
 {
     public PayDb(DbContextOptions<PayDb> options)
