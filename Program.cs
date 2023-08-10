@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using ContextPay.PayDb;
-using Models.PayModel;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<PayDb>(opt => opt.UseInMemoryDatabase("TodoList"));
@@ -15,7 +14,7 @@ app.MapGet("/todoitems/complete", async (PayDb db) =>
 
 // app.MapGet("/todoitems/{id}", async (int id, PayDb db) =>
 //     await db.Pays.FindAsync(id)
-//         is PayDb db
+//         is Pay db
 //             ? Results.Ok(db)
 //             : Results.NotFound());
 
