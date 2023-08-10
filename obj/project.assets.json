@@ -983,11 +983,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Dev\\minimal\\StaticWebApiSharp\\PayAPI.csproj",
+      "projectUniqueName": "C:\\Dev\\minimal\\StaticWebApiSharp\\PayAPI.csproj",
       "projectName": "PayAPI",
-      "projectPath": "c:\\Dev\\minimal\\StaticWebApiSharp\\PayAPI.csproj",
+      "projectPath": "C:\\Dev\\minimal\\StaticWebApiSharp\\PayAPI.csproj",
       "packagesPath": "C:\\Users\\Matth\\.nuget\\packages\\",
-      "outputPath": "c:\\Dev\\minimal\\StaticWebApiSharp\\obj\\",
+      "outputPath": "C:\\Dev\\minimal\\StaticWebApiSharp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1058,13 +1058,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache c:\\Dev\\minimal\\StaticWebApiSharp\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

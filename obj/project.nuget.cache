@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EgwLZ3J/nVgtym6TUlXAcaap5lMnbUbIMfRGC9C2TnalR0f0ONlbk9s7AJN31ZKvPy3FL2mWOnuAqeZ3HLNRyA==",
+  "dgSpecHash": "v3LVoCu4LI6PugTX1gNEsG7iy+ZfBmxXV4Aou+E14KxoOqz12Xp/Yds29V+SEOuVaocQhAjqFHq/H1PSuR5pVQ==",
   "success": true,
-  "projectFilePath": "c:\\Dev\\minimal\\StaticWebApiSharp\\PayAPI.csproj",
+  "projectFilePath": "C:\\Dev\\minimal\\StaticWebApiSharp\\PayAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Matth\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Matth\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\7.0.9\\microsoft.aspnetcore.diagnostics.entityframeworkcore.7.0.9.nupkg.sha512",
@@ -27,12 +27,5 @@
     "C:\\Users\\Matth\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\Matth\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache c:\\Dev\\minimal\\StaticWebApiSharp\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

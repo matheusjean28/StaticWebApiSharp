@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ContextPay.PayDb;
+using Models.Pay;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<PayDb>(opt => opt.UseInMemoryDatabase("TodoList"));

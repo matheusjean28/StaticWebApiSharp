@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Dev\\minimal\\StaticWebApiSharp\\PayAPI.csproj": {}
+    "C:\\Dev\\minimal\\StaticWebApiSharp\\PayAPI.csproj": {}
   },
   "projects": {
-    "c:\\Dev\\minimal\\StaticWebApiSharp\\PayAPI.csproj": {
+    "C:\\Dev\\minimal\\StaticWebApiSharp\\PayAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Dev\\minimal\\StaticWebApiSharp\\PayAPI.csproj",
+        "projectUniqueName": "C:\\Dev\\minimal\\StaticWebApiSharp\\PayAPI.csproj",
         "projectName": "PayAPI",
-        "projectPath": "c:\\Dev\\minimal\\StaticWebApiSharp\\PayAPI.csproj",
+        "projectPath": "C:\\Dev\\minimal\\StaticWebApiSharp\\PayAPI.csproj",
         "packagesPath": "C:\\Users\\Matth\\.nuget\\packages\\",
-        "outputPath": "c:\\Dev\\minimal\\StaticWebApiSharp\\obj\\",
+        "outputPath": "C:\\Dev\\minimal\\StaticWebApiSharp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

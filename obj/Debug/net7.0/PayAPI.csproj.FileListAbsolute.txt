@@ -67,3 +67,8 @@ C:\Dev\minimal\StaticWebApiSharp\obj\Debug\net7.0\refint\PayAPI.dll
 C:\Dev\minimal\StaticWebApiSharp\obj\Debug\net7.0\PayAPI.pdb
 C:\Dev\minimal\StaticWebApiSharp\obj\Debug\net7.0\PayAPI.genruntimeconfig.cache
 C:\Dev\minimal\StaticWebApiSharp\obj\Debug\net7.0\ref\PayAPI.dll
+C:\Dev\minimal\StaticWebApiSharp\bin\Debug\net7.0\Humanizer.dll
+C:\Dev\minimal\StaticWebApiSharp\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Dev\minimal\StaticWebApiSharp\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Dev\minimal\StaticWebApiSharp\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Dev\minimal\StaticWebApiSharp\bin\Debug\net7.0\System.CodeDom.dll
