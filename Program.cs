@@ -23,7 +23,7 @@ app.MapGet("/todoitems/complete", async (PayDb db) =>
 app.MapPost("/todoitems", async (Pay pay, PayDb db) =>
 {
     db.Pays.Add(pay);
-    await db.SaveChangesAsync(pay);
+    await db.SaveChangesAsync();
 
     return Results.Created($"/todoitems/{pay.Id}", pay);
 });
