@@ -13,10 +13,9 @@ app.MapGet("/todoitems", async (PayDb db) =>
 app.MapGet("/todoitems/complete", async (PayDb db) =>
     await db.Pays.Where(t => t.IsComplete).ToListAsync());
 
-// by id
 // app.MapGet("/todoitems/{id}", async (int id, PayDb db) =>
-//     await db.PayDb.FindAsync(id)
-//         is Pay db
+//     await db.Pay.FindAsync(id)
+//         is PayDb db
 //             ? Results.Ok(db)
 //             : Results.NotFound());
 
