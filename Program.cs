@@ -13,11 +13,11 @@ app.MapGet("/todoitems", async (PayDb db) =>
 app.MapGet("/todoitems/complete", async (PayDb db) =>
     await db.Pays.Where(t => t.IsComplete).ToListAsync());
 
-// app.MapGet("/todoitems/{id}", async (int id, PayDb db) =>
-//     await db.Pays.FindAsync(id)
-//         is Pay db
-//             ? Results.Ok(db)
-//             : Results.NotFound());
+app.MapGet("/todoitems/{id}", async (int id, PayDb db) =>
+    await db.Pays.FindAsync(id)
+        is Pay pay
+            ? Results.Ok(pay)
+            : Results.NotFound());
 
 app.MapPost("/todoitems", async (Pay pay, PayDb db) =>
 {
