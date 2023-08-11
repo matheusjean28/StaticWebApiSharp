@@ -19,6 +19,16 @@ app.MapGet("/paylist/{id}", async (int id, PayDb db) =>
             ? Results.Ok(pay)
             : Results.NotFound($"sorry, item {id} not found"));
 
+
+app.MapPost("/paylist", async (Pay pay, PayDb db) =>
+{
+    db.Pays.Add(pay);
+    await db.SaveChangesAsync();
+
+    return Results.Created($"/paylist/{pay.Id}", pay);
+});
+
+// add some produt
 app.MapPost("/paylist", async (Pay pay, PayDb db) =>
 {
     db.Pays.Add(pay);
