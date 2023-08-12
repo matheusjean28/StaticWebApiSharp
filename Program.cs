@@ -1,50 +1,62 @@
 using Microsoft.EntityFrameworkCore;
 using ContextPay.PayDb;
-using Models.Pay;
-using Models.Product;
+
+using ModelsPay;
+using ModelsProduct;
 
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<PayDb>(opt => opt.UseInMemoryDatabase("TodoList"));
+builder.Services.AddDbContext<PayDb>(opt => opt.UseSqlite("Data Source=paydb.db"));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 var app = builder.Build();
 
-app.MapGet("/v1/paylist", async (PayDb db) =>
+
+
+app.MapGet("/paylist", async (PayDb db) =>
     await db.Pays.ToListAsync());
 
-//get prod
-app.MapGet("/v1/product", async (ProductDb db) =>
-    await db.Products.ToListAsync());
-
-app.MapGet("/v1/paylist/complete", async (PayDb db) =>
-    await db.Pays.Where(t => t.IsComplete).ToListAsync());
-
-app.MapGet("/v1/paylist/{id}", async (int id, PayDb db) =>
-    await db.Pays.FindAsync(id)
-        is Pay pay
-            ? Results.Ok(pay)
-            : Results.NotFound($"sorry, item {id} not found"));
 
 
-app.MapPost("/v1/paylist", async (Pay pay, PayDb db) =>
+app.MapPost("/paylist", async (Pay pay, PayDb db) =>
 {
     db.Pays.Add(pay);
     await db.SaveChangesAsync();
 
-    return Results.Created($"/v1/paylist/{pay.Id}", pay);
+    return Results.Created($"/paylist/{pay.Id}", pay);
 });
 
 
-// add some produt
-app.MapPost("/v1/product", async (Product product, ProductDb db) =>
-{   
+
+app.MapPost("/paylist/{id}", async (int id, Product product, PayDb db) =>
+{
+    //checks id exist´s 
+    var pay = await db.Pays.FindAsync(id);
+    if (pay is null)
+    {
+        return Results.NotFound($"Payment with ID {id} not found.");
+    }
+
+    product.PayId = pay.Id;
     db.Products.Add(product);
+    
     await db.SaveChangesAsync();
-    return Results.Created($"/v1/product/{product.Id}", product);
+
+    return Results.Created($"/paylist/{product.Id}", product);
 });
 
 
-app.MapPut("/v1/paylist/{id}", async (int id, Pay pay, PayDb db) =>
+app.MapGet("/paylist/product/{id}", async (int id, PayDb db) =>
+{
+    var products = await db.Products.ToListAsync();
+    if (products is null)
+    {
+        return Results.NotFound($"Product with ID {id} not found.");
+    }
+    return Results.Ok(products);
+
+});
+
+app.MapPut("/paylist/{id}", async (int id, Pay pay, PayDb db) =>
 {
     var _pay = await db.Pays.FindAsync(id);
 

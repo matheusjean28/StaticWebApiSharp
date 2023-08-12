@@ -14,6 +14,7 @@ x64/
 [Bb]in/
 [Oo]bj/
 
+
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
@@ -43,6 +44,8 @@ x64/
 *.log
 *.svclog
 *.scc
+*.obj/
+
 
 # Visual C++ cache files
 ipch/
