@@ -1,0 +1,8 @@
+add some methods
+when the follow request beats on http://localhost:5207/product >> 
+
+[POST] 
+makes a new product assing with the PayDb >> it´s like a list of Payment.
+
+[DELET] 
+DELET reletioned product on this list .
