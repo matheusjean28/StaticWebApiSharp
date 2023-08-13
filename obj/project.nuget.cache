@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nfMw/73db8AcSNIaIzv1uDqiScCtseKEgmFD5Lj6OLbD6lT5fJfUNQpLthHV8/M9130ma5nuCFCekL2+jdaYMA==",
+  "dgSpecHash": "/NtNn2eDQiHVihuK390JX4/RBxSrvIZJeIxfjUjWT1aeatiIlxw8h3SmphkHTE1n7Ir0o00H13JmowyQAGqCvg==",
   "success": true,
   "projectFilePath": "C:\\dev\\PayAPI\\PayAPI.csproj",
   "expectedPackageFiles": [
@@ -26,6 +26,7 @@
     "C:\\Users\\sandr\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\sandr\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\sandr\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\sandr\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\sandr\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.4\\sqlitepclraw.bundle_e_sqlite3.2.1.4.nupkg.sha512",
     "C:\\Users\\sandr\\.nuget\\packages\\sqlitepclraw.core\\2.1.4\\sqlitepclraw.core.2.1.4.nupkg.sha512",
     "C:\\Users\\sandr\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.4\\sqlitepclraw.lib.e_sqlite3.2.1.4.nupkg.sha512",
